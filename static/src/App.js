@@ -1,23 +1,15 @@
 import logo from './logo.svg';
+import 'normalize.css/normalize.css'
 import './App.css';
+import '@blueprintjs/icons/lib/css/blueprint-icons.css'
+import '@blueprintjs/core/lib/css/blueprint.css'
+import { Button } from '@blueprintjs/core'
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          UI Knight
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          GO
-        </a>
-      </header>
+      <Button icon="refresh" text="Hi" />
     </div>
   );
 }
