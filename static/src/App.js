@@ -3,13 +3,34 @@ import 'normalize.css/normalize.css'
 import './App.css';
 import '@blueprintjs/icons/lib/css/blueprint-icons.css'
 import '@blueprintjs/core/lib/css/blueprint.css'
-import { Button } from '@blueprintjs/core'
+import { Button, Navbar } from '@blueprintjs/core'
 
+
+function Body(){
+  return <></>
+}
+
+function SideBar(){
+  return <div className="sidebar"></div>
+}
+
+function Header(){
+  return <Navbar>
+      <Navbar.Group>
+          <Navbar.Heading>UI Knight</Navbar.Heading>
+          <Navbar.Divider />
+          <Button className="bp3-minimal" icon="home" text="Home" />
+          <Button className="bp3-minimal" icon="document" text="Files" />
+      </Navbar.Group>
+  </Navbar>
+}
 
 function App() {
   return (
     <div className="App">
-      <Button icon="refresh" text="Hi" />
+      <Header />
+      <SideBar />
+      <Body />
     </div>
   );
 }
